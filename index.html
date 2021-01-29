@@ -2,7 +2,10 @@
 <html lang="jp">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
     <title>新築完成見学会【デバイス・ホーム】2月6日(土)～7日(日)</title>
     <meta content="" name="descriptison" />
     <meta content="" name="keywords" />
@@ -23,46 +26,19 @@
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-    <!-- adobe fonts -->
-    <script>
-      ;(function (d) {
-        var config = {
-            kitId: 'yce7zyo',
-            scriptTimeout: 3000,
-            async: true,
-          },
-          h = d.documentElement,
-          t = setTimeout(function () {
-            h.className = h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive'
-          }, config.scriptTimeout),
-          tk = d.createElement('script'),
-          f = false,
-          s = d.getElementsByTagName('script')[0],
-          a
-        h.className += ' wf-loading'
-        tk.src = 'https://use.typekit.net/' + config.kitId + '.js'
-        tk.async = true
-        tk.onload = tk.onreadystatechange = function () {
-          a = this.readyState
-          if (f || (a && a != 'complete' && a != 'loaded')) return
-          f = true
-          clearTimeout(t)
-          try {
-            Typekit.load(config)
-          } catch (e) {}
-        }
-        s.parentNode.insertBefore(tk, s)
-      })(document)
-    </script>
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
     <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.theme.default.css" />
-    <link rel="stylesheet" href="assets/vendor/gradWrap/grad.css" />
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Vuetify -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet" />
     <!-- =======================================================
   * Template Name: Amoeba - v2.2.0
   * Template URL: https://bootstrapmade.com/free-one-page-bootstrap-template-amoeba/
@@ -82,6 +58,12 @@
       ></iframe
     ></noscript>
     <main id="main">
+      <!-- ======= FAB ======= -->
+      <!-- <div class="fab">
+        <a class="button" href="#">
+          <img class="rollover" src="img/infoButton_out.png" alt="button" />
+        </a>
+      </div> -->
       <!-- ======= top Section ======= -->
       <section id="top" class="top">
         <img class="topImg" src="img/section1.jpg" />
@@ -110,7 +92,7 @@
             <img src="img/carouselInfo/_DSC1981.jpg" />
           </div>
           <div>
-            <img src="img/carouselInfo/_MG_5577＃.jpg" />
+            <img src="img/carouselInfo/_MG_5577.jpg" />
           </div>
           <div>
             <img src="img/carouselInfo/151128yn028.jpg" />
@@ -128,6 +110,20 @@
         <div class="tourInfo">
           <img src="img/info見学会情報.png" alt="見学会情報" />
         </div>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d796.5245959432789!2d140.85386508812553!3d37.00744919873801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDAwJzI2LjgiTiAxNDDCsDUxJzE1LjkiRQ!5e0!3m2!1sja!2sjp!4v1611909305733!5m2!1sja!2sjp"
+            width="90%"
+            height="332px"
+            frameborder="0"
+            style="border: 0; display: block; margin: 0 auto"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+
         <div class="btn">
           <a href="#">
             <img class="rollover" src="img/infoButton_out.png" alt="button" />
@@ -161,16 +157,16 @@
               <img class="rollover" src="img\flowButton1_out.png" alt="ダウンロードはこちら" />
             </a>
           </div>
-          <img src="img/flowStep3.png" alt="ステップ3">
+          <img src="img/flowStep3.png" alt="ステップ3" />
           <div class="btn">
             <a href="#">
               <img class="rollover" src="img\flowButton2_out.png" alt="LINE追加はこちら" />
             </a>
           </div>
-          <img src="img/flowStep4.png" alt="ステップ4">
-          <img class="pb-4" src="img/flowStep5.png" alt="ステップ5">
+          <img src="img/flowStep4.png" alt="ステップ4" />
+          <img class="pb-4" src="img/flowStep5.png" alt="ステップ5" />
         </div>
-        <img class="align-end" src="img/flowBackgroundLine.png">
+        <img class="align-end" src="img/flowBackgroundLine.png" />
       </section>
 
       <section class="merit" id="merit">
@@ -192,7 +188,7 @@
             <img src="img/carouselInfo/_DSC1981.jpg" />
           </div>
           <div>
-            <img src="img/carouselInfo/_MG_5577＃.jpg" />
+            <img src="img/carouselInfo/_MG_5577.jpg" />
           </div>
           <div>
             <img src="img/carouselInfo/151128yn028.jpg" />
@@ -210,6 +206,18 @@
         <div class="tourInfo">
           <img src="img/info見学会情報.png" alt="見学会情報" />
         </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d796.5245959432789!2d140.85386508812553!3d37.00744919873801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDAwJzI2LjgiTiAxNDDCsDUxJzE1LjkiRQ!5e0!3m2!1sja!2sjp!4v1611909305733!5m2!1sja!2sjp"
+            width="90%"
+            height="332px"
+            frameborder="0"
+            style="border: 0; display: block; margin: 0 auto"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
         <div class="btn">
           <a href="#">
             <img class="rollover" src="img/infoButton_out.png" alt="button" />
@@ -219,141 +227,128 @@
 
       <section class="example" id="example">
         <div class="title">
-          <img src="img/exampleTitle.png" alt="おうちのプラン例をご紹介">
+          <img src="img/exampleTitle.png" alt="おうちのプラン例をご紹介" />
         </div>
         <div class="owl-carousel owl-theme carousel">
           <div>
-            <img src="img/carouselInfo/160828_022_0062.jpg" />
+            <img src="img/carouselExample/_DOI4780.jpg" />
           </div>
           <div>
-            <img src="img/carouselInfo/_DOI4791.jpg" />
+            <img src="img/carouselExample/_DOI4888.jpg" />
           </div>
           <div>
-            <img src="img/carouselInfo/_DSC1981.jpg" />
+            <img src="img/carouselExample/_DOI4879.jpg" />
           </div>
           <div>
-            <img src="img/carouselInfo/_MG_5577＃.jpg" />
+            <img src="img/carouselExample/_DOI4869.jpg" />
           </div>
           <div>
-            <img src="img/carouselInfo/151128yn028.jpg" />
+            <img src="img/carouselExample/_DOI4843.jpg" />
           </div>
           <div>
-            <img src="img/carouselInfo/160611ue021.jpg" />
+            <img src="img/carouselExample/_DOI4817.jpg" />
           </div>
           <div>
-            <img src="img/carouselInfo/161201_036_0185.jpg" />
-          </div>
-          <div>
-            <img src="img/carouselInfo/170617ue024.jpg" />
+            <img src="img/carouselExample/_DOI4807.jpg" />
           </div>
         </div>
         <div class="content">
-          <img src="img/exampleContent.png" alt="content">
+          <img src="img/exampleContent.png" alt="content" />
         </div>
       </section>
 
-      <!-- <section id="contact" class="contact">
-              <div class="container">
-                <div class="section-title">
-                  <h2>予約フォーム</h2>
-                </div>
-                <div class="row d-flex justify-content-center">
-                  <div class="col-lg-5 col-md-6">
-                    <div class="contact-about">
-                      <h3 class="text-center">デバイス・ホーム</h3>
-                      <p>
-                        株式会社デバイス・ホームは、家を売る会社ではなく、福島の皆様に安くていい家をつくっている会社です。
-                      </p>
-                    </div>
-                    <div class="info d-flex flex-column px-auto">
-                      <div>
-                        <i class="icofont-google-map"></i>
-                        <p>住所：福島県会津若松市南千石町3-12</p>
-                      </div>
-                      <div>
-                        <i class="icofont-phone"></i>
-                        <p>電話番号：<a href="tel:0120910404">0120-91-0404</a></p>
-                      </div>
-                      <div>
-                        <i class="icofont-envelope"></i>
-                        <p>
-                          メール：<a href="mailto:info@luckydakarea.com">info@luckydakarea.com</a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-5 col-md-6">
-                    <form
-                      action="forms/contact.php"
-                      method="post"
-                      role="form"
-                      class="php-email-form"
-                    >
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          name="name"
-                          class="form-control"
-                          id="name"
-                          placeholder="お名前"
-                          data-rule="minlen:2"
-                          data-msg="2文字以上お書きください"
-                        />
-                        <div class="validate"></div>
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="email"
-                          class="form-control"
-                          name="email"
-                          id="email"
-                          placeholder="メールアドレス"
-                          data-rule="email"
-                          data-msg="正しい形式のメールアドレスを入力してください"
-                        />
-                        <div class="validate"></div>
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="tel"
-                          class="form-control"
-                          name="tel"
-                          id="subject"
-                          placeholder="電話番号"
-                          data-rule="minlen:4"
-                          data-msg="8文字以上の数字を入力してください"
-                        />
-                        <div class="validate"></div>
-                      </div>
-                      <div class="form-group">
-                        <textarea
-                          class="form-control"
-                          name="message"
-                          rows="5"
-                          data-rule="required"
-                          data-msg="希望日時をお書きください"
-                          placeholder="希望日時や要望等"
-                        ></textarea>
-                        <div class="validate"></div>
-                      </div>
-                      <div class="mb-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message">送信に失敗しました</div>
-                        <div class="sent-message">送信完了しました</div>
-                      </div>
-                      <input type="hidden" id="token" name="token" value="1234567" />
-                      <div class="text-center"><button type="submit">送信</button></div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </section> -->
+      <div id="app">
+        <v-app>
+          <section class="contact" id="contact">
+            <div class="title">
+              <img src="img/contactTitle.png" alt="" />
+            </div>
+            <v-sheet class="form-group" color="transparent">
+              <v-form ref="form" v-model="form" class="">
+                <v-text-field
+                  v-model="name"
+                  :rules="[rules.required]"
+                  autocomplete="name"
+                  color="#fdcac9"
+                  label="お名前"
+                  outlined
+                ></v-text-field>
+
+                <v-text-field
+                  v-model="email"
+                  :rules="[rules.required, rules.email]"
+                  autocomplete="email"
+                  color="#fdcac9"
+                  label="メールアドレス"
+                  outlined
+                >
+                </v-text-field>
+
+                <v-text-field
+                  v-model="phone"
+                  :rules="[rules.required, rules.phone]"
+                  autocomplete="tel"
+                  color="#fdcac9"
+                  label="電話番号(半角数字のみ)"
+                  outlined
+                ></v-text-field>
+
+                <v-radio-group v-model="type" :rules="[rules.required]" row>
+                  <v-radio color="#fdcac9" label="見学会場を希望" value="会場希望"></v-radio>
+                  <v-radio color="#fdcac9" label="web見学会を希望" value="web希望"></v-radio>
+                </v-radio-group>
+
+                <v-textarea
+                  v-model="contents"
+                  :rules="[rules.required]"
+                  color="#fdcac9"
+                  label="ご希望日時やご要望"
+                  outlined
+                ></v-textarea>
+
+                <v-row>
+                  <v-btn
+                    d-block
+                    class="mx-auto px-12"
+                    x-large
+                    color="#fdcac9"
+                    @click="clickBtnSend"
+                    :loading="loading"
+                    :disabled="!form"
+                    >送信
+                  </v-btn>
+                </v-row>
+
+                <v-snackbar color="success" v-model="snackbar" timeout="4000">
+                  {{ snackbarText }}
+                  <template v-slot:action="{ attrs }">
+                    <v-btn text v-bind="attrs" @click="snackbar = false"> Close </v-btn>
+                  </template>
+                </v-snackbar>
+
+                <v-snackbar color="error" v-model="snackbarError" timeout="5000">
+                  送信できませんでした
+                  <template v-slot:action="{ attrs }">
+                    <v-btn text v-bind="attrs" @click="snackbarError = false"> Close </v-btn>
+                  </template>
+                </v-snackbar>
+              </v-form>
+            </v-sheet>
+          </section>
+        </v-app>
+      </div>
+
+      <section class="overview" id="overview">
+        <div class="content">
+          <img src="img/overview.png" alt="content" />
+        </div>
+      </section>
 
       <!-- End Contact Us Section -->
     </main>
     <!-- End #main -->
     <!-- ======= Footer ======= -->
-    <footer id="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="copyright">
           &copy; Copyright <strong><span>Device Home</span></strong
@@ -375,12 +370,14 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
     <script src="assets/vendor/jquery-easy-rollover/jquery.easy-rollover.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/venobox/venobox.min.js"></script>
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="assets/vendor/gradWrap/grad.js"></script>
+    <!-- Vuetify -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/vuetify.js"></script>
   </body>
 </html>
