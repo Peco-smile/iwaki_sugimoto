@@ -144,6 +144,11 @@ img {
 .flow .btn {
   margin: 0 6em 0 6em;
 }
+@media screen and (max-width: 768px) {
+  .flow .btn {
+    margin: 0 3em 3em 3em;
+  }
+}
 .flow .align-end {
   vertical-align: bottom;
 }
