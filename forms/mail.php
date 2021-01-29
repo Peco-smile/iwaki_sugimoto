@@ -18,8 +18,8 @@
 		
 	//送信先のメールアドレスを変数に入れておきます。
 	//ただ、変数という箱に入れただけでこれで送れるとかではありません。
-	$to="y.hosoda@luckydakara.com";
-	// $to = 'device8781@gmail.com,r.kanbayashi@luckydakara.com,k.yumita@luckydakara.com,e.yumita@luckydakara.com,s.watanabe@luckydakara.com,m.hata@luckydakara.com,h.oozeki@luckydakara.com,c.nishida@luckydakara.com,m.inoue@luckydakara.com,m.imano@luckydakara.com,s.hoshi@luckydakara.com,s.sakai@luckydakara.com,a.nishimura@luckydakara.com,y.honoka@luckydakara.com,y.hosoda@luckydakara.com'; 
+	// $to="y.hosoda@luckydakara.com";
+	$to = 'device8781@gmail.com,r.kanbayashi@luckydakara.com,k.yumita@luckydakara.com,e.yumita@luckydakara.com,s.watanabe@luckydakara.com,m.hata@luckydakara.com,h.oozeki@luckydakara.com,c.nishida@luckydakara.com,m.inoue@luckydakara.com,m.imano@luckydakara.com,s.hoshi@luckydakara.com,s.sakai@luckydakara.com,a.nishimura@luckydakara.com,y.honoka@luckydakara.com,y.hosoda@luckydakara.com'; 
 	//タイトルを変数に入れておきます。
 	$sub1="[自動返信] お問い合わせありがとうございます。";
 	//$mailareaとは、ユーザーが入力したメールアドレスです。

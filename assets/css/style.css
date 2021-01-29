@@ -161,7 +161,7 @@ img {
 # webTour
 --------------------------------------------------------------*/
 .webTour {
-  background: url(/img/webTourBG.jpg) no-repeat;
+  background: url(../img/webTourBG.jpg) no-repeat;
 }
 
 .webTour .title {
@@ -190,7 +190,7 @@ img {
 # flow
 --------------------------------------------------------------*/
 .flow {
-  background: top / cover no-repeat url(/img/flowBackground.png), #ffffff;
+  background: top / cover no-repeat url(../img/flowBackground.png), #ffffff;
 }
 
 .flow .title {
@@ -248,7 +248,7 @@ img {
 # Contact Us
 --------------------------------------------------------------*/
 .contact {
-  background: top / cover no-repeat url(/img/contactBG.png);
+  background: top / cover no-repeat url(../img/contactBG.png);
   height: auto;
 }
 
