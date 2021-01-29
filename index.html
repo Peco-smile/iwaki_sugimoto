@@ -260,80 +260,88 @@
       <div id="app">
         <v-app>
           <section class="contact" id="contact">
-            <div class="title">
-              <img src="img/contactTitle.png" alt="" />
-            </div>
-            <v-sheet class="form-group" color="transparent">
-              <v-form ref="form" v-model="form" class="">
-                <v-text-field
-                  v-model="name"
-                  :rules="[rules.required]"
-                  autocomplete="name"
-                  color="#fdcac9"
-                  label="お名前"
-                  outlined
-                ></v-text-field>
+            <v-row justify="center">
+              <v-col cols="10">
+                <div class="title">
+                  <img src="img/contactTitle.png" alt="" />
+                </div>
+                <v-sheet class="form-group" color="transparent">
+                  <v-form ref="form" v-model="form">
+                    <v-text-field
+                      v-model="name"
+                      :rules="[rules.required]"
+                      autocomplete="name"
+                      color="#fdcac9"
+                      label="お名前"
+                      outlined
+                      dense
+                    ></v-text-field>
 
-                <v-text-field
-                  v-model="email"
-                  :rules="[rules.required, rules.email]"
-                  autocomplete="email"
-                  color="#fdcac9"
-                  label="メールアドレス"
-                  outlined
-                >
-                </v-text-field>
+                    <v-text-field
+                      v-model="email"
+                      :rules="[rules.required, rules.email]"
+                      autocomplete="email"
+                      color="#fdcac9"
+                      label="メールアドレス"
+                      outlined
+                      dense
+                    >
+                    </v-text-field>
 
-                <v-text-field
-                  v-model="phone"
-                  :rules="[rules.required, rules.phone]"
-                  autocomplete="tel"
-                  color="#fdcac9"
-                  label="電話番号(半角数字のみ)"
-                  outlined
-                ></v-text-field>
+                    <v-text-field
+                      v-model="phone"
+                      :rules="[rules.required, rules.phone]"
+                      autocomplete="tel"
+                      color="#fdcac9"
+                      label="電話番号(半角数字のみ)"
+                      outlined
+                      dense
+                    ></v-text-field>
 
-                <v-radio-group v-model="type" :rules="[rules.required]" row>
-                  <v-radio color="#fdcac9" label="見学会場を希望" value="会場希望"></v-radio>
-                  <v-radio color="#fdcac9" label="web見学会を希望" value="web希望"></v-radio>
-                </v-radio-group>
+                    <v-radio-group v-model="type" :rules="[rules.required]" row>
+                      <v-radio color="#fdcac9" label="見学会場を希望" value="会場希望"></v-radio>
+                      <v-radio color="#fdcac9" label="web見学会を希望" value="web希望"></v-radio>
+                    </v-radio-group>
 
-                <v-textarea
-                  v-model="contents"
-                  :rules="[rules.required]"
-                  color="#fdcac9"
-                  label="ご希望日時やご要望"
-                  outlined
-                ></v-textarea>
+                    <v-textarea
+                      v-model="contents"
+                      :rules="[rules.required]"
+                      color="#fdcac9"
+                      label="ご希望日時やご要望"
+                      outlined
+                      rows="4"
+                    ></v-textarea>
 
-                <v-row>
-                  <v-btn
-                    d-block
-                    class="mx-auto px-12"
-                    x-large
-                    color="#fdcac9"
-                    @click="clickBtnSend"
-                    :loading="loading"
-                    :disabled="!form"
-                    >送信
-                  </v-btn>
-                </v-row>
+                    <v-row>
+                      <v-btn
+                        d-block
+                        class="mx-auto px-12"
+                        x-large
+                        color="#fdcac9"
+                        @click="clickBtnSend"
+                        :loading="loading"
+                        :disabled="!form"
+                        >送信
+                      </v-btn>
+                    </v-row>
 
-                <v-snackbar color="success" v-model="snackbar" timeout="4000">
-                  {{ snackbarText }}
-                  <template v-slot:action="{ attrs }">
-                    <v-btn text v-bind="attrs" @click="snackbar = false"> Close </v-btn>
-                  </template>
-                </v-snackbar>
+                    <v-snackbar color="success" v-model="snackbar" timeout="4000">
+                      {{ snackbarText }}
+                      <template v-slot:action="{ attrs }">
+                        <v-btn text v-bind="attrs" @click="snackbar = false"> Close </v-btn>
+                      </template>
+                    </v-snackbar>
 
-                <v-snackbar color="error" v-model="snackbarError" timeout="5000">
-                  送信できませんでした
-                  <template v-slot:action="{ attrs }">
-                    <v-btn text v-bind="attrs" @click="snackbarError = false"> Close </v-btn>
-                  </template>
-                </v-snackbar>
-              </v-form>
-            </v-sheet>
+                    <v-snackbar color="error" v-model="snackbarError" timeout="5000">
+                      送信できませんでした
+                      <template v-slot:action="{ attrs }">
+                        <v-btn text v-bind="attrs" @click="snackbarError = false"> Close </v-btn>
+                      </template>
+                    </v-snackbar>
+                  </v-form>
+                </v-sheet>
+              </v-col>
+            </v-row>
           </section>
         </v-app>
       </div>
