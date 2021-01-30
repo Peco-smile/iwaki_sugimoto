@@ -154,14 +154,20 @@ img {
 }
 
 .info .btn {
-  margin: 0 7em 3em 7em;
+  margin: 0 3em 3em 3em;
+}
+
+@media screen and (min-width: 768px) {
+  .info .btn {
+    margin: 0 7em 3em 7em;
+  }
 }
 
 /*--------------------------------------------------------------
 # webTour
 --------------------------------------------------------------*/
 .webTour {
-  background: url(/img/webTourBG.jpg) no-repeat;
+  background: url(/assets/img/webTourBG.jpg) no-repeat;
 }
 
 .webTour .title {
@@ -190,7 +196,7 @@ img {
 # flow
 --------------------------------------------------------------*/
 .flow {
-  background: top / cover no-repeat url(/img/flowBackground.png), #ffffff;
+  background: top / cover no-repeat url(/assets/img/flowBackground.png), #ffffff;
 }
 
 .flow .title {
@@ -203,7 +209,7 @@ img {
 }
 
 .flow .btn {
-  margin: 0 6em 0em 6em;
+  margin: 0 3em 0em 3em;
 }
 
 .flow .align-end {
@@ -248,7 +254,7 @@ img {
 # Contact Us
 --------------------------------------------------------------*/
 .contact {
-  background: top / cover no-repeat url(/img/contactBG.png);
+  background: top / cover no-repeat url(/assets/img/contactBG.png);
   /* background-size: 100%; */
 }
 
@@ -269,7 +275,7 @@ img {
 
 @media screen and (max-width: 320px) {
   .contact {
-    background: top / cover no-repeat url(/img/contactBGs.png);
+    background: top / cover no-repeat url(/assets/img/contactBGs.png);
     /* background-size: 100%; */
   }
   .contact .title {
@@ -279,7 +285,7 @@ img {
 
 @media screen and (max-width: 375px) and (min-width: 375px) {
   .contact {
-    background: top / cover no-repeat url(/img/contactBGm.png);
+    background: top / cover no-repeat url(/assets/img/contactBGm.png);
     /* background-size: 100%; */
   }
   .contact .title {
@@ -289,7 +295,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .contact {
-    background: top / cover no-repeat url(/img/contactBG.png);
+    background: top / cover no-repeat url(/assets/img/contactBG.png);
     /* background-size: 100%; */
   }
 
