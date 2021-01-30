@@ -167,7 +167,7 @@ img {
 # webTour
 --------------------------------------------------------------*/
 .webTour {
-  background: url(/assets/img/webTourBG.jpg) no-repeat;
+  background: url(../img/webTourBG.jpg) no-repeat;
 }
 
 .webTour .title {
@@ -196,7 +196,7 @@ img {
 # flow
 --------------------------------------------------------------*/
 .flow {
-  background: top / cover no-repeat url(/assets/img/flowBackground.png), #ffffff;
+  background: top / cover no-repeat url(../img/flowBackground.png), #ffffff;
 }
 
 .flow .title {
@@ -260,7 +260,7 @@ img {
 # Contact Us
 --------------------------------------------------------------*/
 .contact {
-  background: top / cover no-repeat url(/assets/img/contactBG.png);
+  background: top / cover no-repeat url(../img/contactBG.png);
   /* background-size: 100%; */
 }
 
@@ -269,8 +269,6 @@ img {
 }
 
 .contact .form-group {
-  /* height: 80%; */
-  /* padding: 0 5em; */
   padding-bottom: 6em;
 }
 
@@ -281,18 +279,19 @@ img {
 
 @media screen and (max-width: 320px) {
   .contact {
-    background: top / cover no-repeat url(/assets/img/contactBGs.png);
-    /* background-size: 100%; */
+    background: top / cover no-repeat url(../img/contactBGs.png);
   }
   .contact .title {
     padding: 5em 3em 1em 3em;
+  }
+  .v-application--wrap {
+    min-height: auto !important;
   }
 }
 
 @media screen and (max-width: 375px) and (min-width: 375px) {
   .contact {
-    background: top / cover no-repeat url(/assets/img/contactBGm.png);
-    /* background-size: 100%; */
+    background: top / cover no-repeat url(../img/contactBGm.png);
   }
   .contact .title {
     padding: 6em 3em 1em 3em;
@@ -301,8 +300,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .contact {
-    background: top / cover no-repeat url(/assets/img/contactBG.png);
-    /* background-size: 100%; */
+    background: top / cover no-repeat url(../img/contactBG.png);
   }
 
   .contact .title {
