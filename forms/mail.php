@@ -60,7 +60,7 @@
 	$content .= "　E-mail：info@luckydakara.com\r\n";
 	$content .= "━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n";
 
-	$sub2 = $name . "様　2/6~7いわき見学会LPよりお問い合わせがありました。";
+	$sub2 = "[3/13~14会津見学会LP おうち見学会ver]" . $name."様よりお問い合わせがありました。";
 	$content2 = "";
 	$content2 .= "お問い合わせがありました。\r\n";
 	$content2 .= "お問い合わせ内容は下記通りです。\r\n";
@@ -68,7 +68,7 @@
 	$content2 .= "お名前       " . $name."\r\n";
 	$content2 .= "メールアドレス   " . $email."\r\n";
 	$content2 .= "電話番号   " . $tel."\r\n";
-	$content2 .= "希望の見学方法：".$type."\r\n";
+	$content2 .= "希望の見学方法：" . $type."\r\n";
 	$content2 .= "お問い合わせ内容   " . $message."\r\n";
 	$content2 .= "お問い合わせ日時   " . $datetime."\r\n";
 	$content2 .= "================================="."\r\n";
